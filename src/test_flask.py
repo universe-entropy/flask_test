@@ -21,5 +21,6 @@ def signin():
         return render_template('form.html', message='Wrong username or password', username=username)
 
 if __name__ == '__main__':
-    app.run()    # flask default localhost:5000
     print(os.getcwd())
+    app.run()    # flask default localhost:5000
+
