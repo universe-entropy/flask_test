@@ -1,6 +1,6 @@
 from flask import Flask, request, render_template    # render template use jinja
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='../templates')  # 
 
 @app.route('/', methods=['GET', 'POST'])  # decorator to link url to function
 def home():
