@@ -1,4 +1,5 @@
 from flask import Flask, request, render_template    # render template use jinja
+import os
 
 app = Flask(__name__, template_folder='../templates')  # 
 
@@ -21,3 +22,4 @@ def signin():
 
 if __name__ == '__main__':
     app.run()    # flask default localhost:5000
+    print(os.getcwd())
